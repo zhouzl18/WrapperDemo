@@ -1,6 +1,7 @@
 package com.feng.wrapperdemo.wrap.vp;
 
 import android.content.Context;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -18,7 +19,7 @@ import java.util.List;
  *
  */
 
-public class CommonViewPager<T> extends RelativeLayout{
+public class CommonViewPager<T> extends ConstraintLayout{
 
     private ViewPager mViewPager;
     private CommonPagerAdapter mAdapter;
@@ -40,7 +41,7 @@ public class CommonViewPager<T> extends RelativeLayout{
 
     private void init() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.common_view_pager_layout, this, true);
-        mViewPager = (ViewPager) view.findViewById(R.id.common_view_pager);
+        mViewPager = (ViewPager) view.findViewById(R.id.view_pager);
     }
 
     public void setPages(List<T> data, ViewPagerHolderCreator creator){
