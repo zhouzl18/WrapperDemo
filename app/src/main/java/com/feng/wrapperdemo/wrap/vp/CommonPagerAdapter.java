@@ -1,4 +1,4 @@
-package com.feng.wrapperdemo;
+package com.feng.wrapperdemo.wrap.vp;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

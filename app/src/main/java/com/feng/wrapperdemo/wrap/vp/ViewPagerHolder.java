@@ -1,4 +1,4 @@
-package com.feng.wrapperdemo;
+package com.feng.wrapperdemo.wrap.vp;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

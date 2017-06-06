@@ -1,4 +1,4 @@
-package com.feng.wrapperdemo;
+package com.feng.wrapperdemo.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ import android.util.Log;
 public class BaseActivity extends AppCompatActivity {
 
     private static final String TAG = "BaseActivity";
-    private Context mContext;
+    protected Context mContext;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
